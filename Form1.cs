@@ -16,5 +16,15 @@ namespace SimpleClock2
         {
             InitializeComponent();
         }
+
+        private void timerClcok_Tick(object sender, EventArgs e)
+        {
+
+        }
+
+        private void timerAlert_Tick(object sender, EventArgs e)
+        {
+
+        }
     }
 }

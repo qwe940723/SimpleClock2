@@ -44,7 +44,9 @@ namespace SimpleClock2
 
         private void timerClcok_Tick(object sender, EventArgs e)
         {
-
+            txtTime.Text = DateTime.Now.ToString("HH:mm:ss");    
+            txtDate.Text = DateTime.Now.ToString("yyyy-MM-dd");  
+            txtWeekDay.Text = DateTime.Now.ToString("dddd");     
         }
 
         private void timerAlert_Tick(object sender, EventArgs e)

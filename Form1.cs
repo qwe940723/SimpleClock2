@@ -51,7 +51,35 @@ namespace SimpleClock2
 
         private void timerAlert_Tick(object sender, EventArgs e)
         {
+            
+            if (strSelectTime == DateTime.Now.ToString("HH:mm"))
+            {
+                try
+                {
+                    stopWaveOut();
 
+                    
+                    string audioFilePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Resources", "alert.wav");
+
+                    
+                    audioFileReader = new AudioFileReader(audioFilePath);
+
+                   
+                    waveOut = new WaveOutEvent();
+                    waveOut.Init(audioFileReader);
+
+                   
+                    waveOut.Play();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("無法播放聲音檔，錯誤資訊: " + ex.Message);
+                }
+                finally
+                {
+                    timerAlert.Stop(); 
+                }
+            }
         }
     }
 }

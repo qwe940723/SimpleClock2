@@ -102,7 +102,10 @@ namespace SimpleClock2
 
         private void btnCancelAlert_Click(object sender, EventArgs e)
         {
-
+            stopWaveOut();     
+            timerAlert.Stop(); 
+            btnSetAlert.Enabled = true;
+            btnCancelAlert.Enabled = false;
         }
     }
 }

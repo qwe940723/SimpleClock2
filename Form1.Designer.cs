@@ -148,7 +148,7 @@
             // 
             this.btnSetAlert.Location = new System.Drawing.Point(336, 141);
             this.btnSetAlert.Name = "btnSetAlert";
-            this.btnSetAlert.Size = new System.Drawing.Size(75, 23);
+            this.btnSetAlert.Size = new System.Drawing.Size(104, 23);
             this.btnSetAlert.TabIndex = 6;
             this.btnSetAlert.Text = "設定鬧鐘";
             this.btnSetAlert.UseVisualStyleBackColor = true;
@@ -158,7 +158,7 @@
             // 
             this.btnCancelAlert.Location = new System.Drawing.Point(456, 142);
             this.btnCancelAlert.Name = "btnCancelAlert";
-            this.btnCancelAlert.Size = new System.Drawing.Size(75, 23);
+            this.btnCancelAlert.Size = new System.Drawing.Size(104, 23);
             this.btnCancelAlert.TabIndex = 7;
             this.btnCancelAlert.Text = "取消鬧鐘";
             this.btnCancelAlert.UseVisualStyleBackColor = true;

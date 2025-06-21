@@ -91,5 +91,15 @@ namespace SimpleClock2
                 waveOut = null;
             }
         }
+
+        private void btnSetAlert_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnCancelAlert_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

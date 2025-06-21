@@ -32,6 +32,11 @@
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.txtTime = new System.Windows.Forms.TextBox();
+            this.txtDate = new System.Windows.Forms.TextBox();
+            this.txtWeekDay = new System.Windows.Forms.TextBox();
+            this.cmbHour = new System.Windows.Forms.ComboBox();
+            this.cmbMin = new System.Windows.Forms.ComboBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -51,6 +56,11 @@
             // tabPage1
             // 
             this.tabPage1.Controls.Add(this.textBox1);
+            this.tabPage1.Controls.Add(this.cmbMin);
+            this.tabPage1.Controls.Add(this.cmbHour);
+            this.tabPage1.Controls.Add(this.txtWeekDay);
+            this.tabPage1.Controls.Add(this.txtDate);
+            this.tabPage1.Controls.Add(this.txtTime);
             this.tabPage1.Location = new System.Drawing.Point(4, 25);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
@@ -78,12 +88,53 @@
             this.tabPage3.Text = "倒數";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
+            // txtTime
+            // 
+            this.txtTime.Enabled = false;
+            this.txtTime.Location = new System.Drawing.Point(36, 18);
+            this.txtTime.Name = "txtTime";
+            this.txtTime.Size = new System.Drawing.Size(516, 25);
+            this.txtTime.TabIndex = 0;
+            // 
+            // txtDate
+            // 
+            this.txtDate.Enabled = false;
+            this.txtDate.Location = new System.Drawing.Point(40, 78);
+            this.txtDate.Name = "txtDate";
+            this.txtDate.Size = new System.Drawing.Size(207, 25);
+            this.txtDate.TabIndex = 1;
+            // 
+            // txtWeekDay
+            // 
+            this.txtWeekDay.Enabled = false;
+            this.txtWeekDay.Location = new System.Drawing.Point(316, 76);
+            this.txtWeekDay.Name = "txtWeekDay";
+            this.txtWeekDay.Size = new System.Drawing.Size(244, 25);
+            this.txtWeekDay.TabIndex = 2;
+            // 
+            // cmbHour
+            // 
+            this.cmbHour.FormattingEnabled = true;
+            this.cmbHour.Location = new System.Drawing.Point(36, 141);
+            this.cmbHour.Name = "cmbHour";
+            this.cmbHour.Size = new System.Drawing.Size(121, 23);
+            this.cmbHour.TabIndex = 3;
+            // 
+            // cmbMin
+            // 
+            this.cmbMin.FormattingEnabled = true;
+            this.cmbMin.Location = new System.Drawing.Point(186, 141);
+            this.cmbMin.Name = "cmbMin";
+            this.cmbMin.Size = new System.Drawing.Size(121, 23);
+            this.cmbMin.TabIndex = 4;
+            // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(36, 18);
+            this.textBox1.Location = new System.Drawing.Point(163, 141);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(516, 25);
-            this.textBox1.TabIndex = 0;
+            this.textBox1.Size = new System.Drawing.Size(10, 25);
+            this.textBox1.TabIndex = 5;
+            this.textBox1.Text = ":";
             // 
             // Form1
             // 
@@ -106,7 +157,12 @@
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.TabPage tabPage3;
+        private System.Windows.Forms.TextBox txtTime;
+        private System.Windows.Forms.TextBox txtWeekDay;
+        private System.Windows.Forms.TextBox txtDate;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.ComboBox cmbMin;
+        private System.Windows.Forms.ComboBox cmbHour;
     }
 }
 

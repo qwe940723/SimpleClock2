@@ -94,7 +94,10 @@ namespace SimpleClock2
 
         private void btnSetAlert_Click(object sender, EventArgs e)
         {
-
+            timerAlert.Start(); 
+            btnSetAlert.Enabled = false;
+            btnCancelAlert.Enabled = true;
+            strSelectTime = cmbHour.SelectedItem.ToString() + ":" + cmbMin.SelectedItem.ToString();
         }
 
         private void btnCancelAlert_Click(object sender, EventArgs e)

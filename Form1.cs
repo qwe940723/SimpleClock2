@@ -7,6 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using NAudio.Wave;           
+using System.IO;             
+
 
 namespace SimpleClock2
 {
@@ -15,6 +18,9 @@ namespace SimpleClock2
         public Form1()
         {
             InitializeComponent();
+            comboboxInitialzation();  
+
+            timerClcok.Start();      
         }
 
         private void timerClcok_Tick(object sender, EventArgs e)

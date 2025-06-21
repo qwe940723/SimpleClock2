@@ -38,6 +38,8 @@
             this.cmbHour = new System.Windows.Forms.ComboBox();
             this.cmbMin = new System.Windows.Forms.ComboBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.btnSetAlert = new System.Windows.Forms.Button();
+            this.btnCancelAlert = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.SuspendLayout();
@@ -55,6 +57,8 @@
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.btnCancelAlert);
+            this.tabPage1.Controls.Add(this.btnSetAlert);
             this.tabPage1.Controls.Add(this.textBox1);
             this.tabPage1.Controls.Add(this.cmbMin);
             this.tabPage1.Controls.Add(this.cmbHour);
@@ -136,6 +140,24 @@
             this.textBox1.TabIndex = 5;
             this.textBox1.Text = ":";
             // 
+            // btnSetAlert
+            // 
+            this.btnSetAlert.Location = new System.Drawing.Point(336, 141);
+            this.btnSetAlert.Name = "btnSetAlert";
+            this.btnSetAlert.Size = new System.Drawing.Size(75, 23);
+            this.btnSetAlert.TabIndex = 6;
+            this.btnSetAlert.Text = "設定鬧鐘";
+            this.btnSetAlert.UseVisualStyleBackColor = true;
+            // 
+            // btnCancelAlert
+            // 
+            this.btnCancelAlert.Location = new System.Drawing.Point(456, 142);
+            this.btnCancelAlert.Name = "btnCancelAlert";
+            this.btnCancelAlert.Size = new System.Drawing.Size(75, 23);
+            this.btnCancelAlert.TabIndex = 7;
+            this.btnCancelAlert.Text = "取消鬧鐘";
+            this.btnCancelAlert.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
@@ -163,6 +185,8 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.ComboBox cmbMin;
         private System.Windows.Forms.ComboBox cmbHour;
+        private System.Windows.Forms.Button btnCancelAlert;
+        private System.Windows.Forms.Button btnSetAlert;
     }
 }
 

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
@@ -41,6 +42,8 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.btnSetAlert = new System.Windows.Forms.Button();
             this.btnCancelAlert = new System.Windows.Forms.Button();
+            this.timerClcok = new System.Windows.Forms.Timer(this.components);
+            this.timerAlert = new System.Windows.Forms.Timer(this.components);
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.SuspendLayout();
@@ -159,6 +162,14 @@
             this.btnCancelAlert.Text = "取消鬧鐘";
             this.btnCancelAlert.UseVisualStyleBackColor = true;
             // 
+            // timerClcok
+            // 
+            this.timerClcok.Tick += new System.EventHandler(this.timerClcok_Tick);
+            // 
+            // timerAlert
+            // 
+            this.timerAlert.Tick += new System.EventHandler(this.timerAlert_Tick);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
@@ -189,6 +200,8 @@
         private System.Windows.Forms.ComboBox cmbHour;
         private System.Windows.Forms.Button btnCancelAlert;
         private System.Windows.Forms.Button btnSetAlert;
+        private System.Windows.Forms.Timer timerClcok;
+        private System.Windows.Forms.Timer timerAlert;
     }
 }
 

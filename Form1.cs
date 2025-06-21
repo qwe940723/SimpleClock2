@@ -81,5 +81,15 @@ namespace SimpleClock2
                 }
             }
         }
+        private void stopWaveOut()
+        {
+            
+            if (waveOut != null)
+            {
+                waveOut.Stop();
+                waveOut.Dispose();
+                waveOut = null;
+            }
+        }
     }
 }
